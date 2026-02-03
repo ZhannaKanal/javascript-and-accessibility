@@ -19,3 +19,8 @@ button.addEventListener("click", () => {
   menu.hidden = expanded;
 });
 The HTML sets up a button that controls a dropdown menu. The button uses aria-expanded to indicate whether the menu is open, and aria-controls to link it to the menu by referencing the menu's id.
+
+aria-expanded Attribute, how does it work
+The aria-expanded attribute is used for accessibility purposes to indicate if a control is expanded or collapsed. It's used in conjunction with collapsible widgets like menus, accordions and other  disclosure widgets that control the visibility of content. The aria-expanded attribute is set to true if the control is expanded, or false if it is collapsed.
+<button aria-expanded="true">Menu</button> expanded
+<button aria-expanded="false">Menu</button> collapsed
