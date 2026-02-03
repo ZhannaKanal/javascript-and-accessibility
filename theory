@@ -1,0 +1,21 @@
+Understanding aria-expanded, aria-live and Common Aria States
+How make dynamic and interactive content accessible
+In real-world apps, content is rarely static, and pages often update dynamically through JavaScript.
+<button id="menuButton" aria-expanded="false" aria-controls="menuList">
+Menu
+</button>
+
+<ul id="menuList" hidden>
+  <li>List item 1</li>
+  <li>List item 2</li>
+</ul>
+<script src="index.js"></script>
+const button = document.getElementById("menuButton");
+const menu = document.getElementById("menuList");
+
+button.addEventListener("click", () => {
+  const expanded = button.getAttribute("aria-expanded") === "true";
+  button.setAttribute("aria-expanded", String(!expanded));
+  menu.hidden = expanded;
+});
+The HTML sets up a button that controls a dropdown menu. The button uses aria-expanded to indicate whether the menu is open, and aria-controls to link it to the menu by referencing the menu's id.
