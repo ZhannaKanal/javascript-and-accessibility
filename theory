@@ -24,3 +24,12 @@ aria-expanded Attribute, how does it work
 The aria-expanded attribute is used for accessibility purposes to indicate if a control is expanded or collapsed. It's used in conjunction with collapsible widgets like menus, accordions and other  disclosure widgets that control the visibility of content. The aria-expanded attribute is set to true if the control is expanded, or false if it is collapsed.
 <button aria-expanded="true">Menu</button> expanded
 <button aria-expanded="false">Menu</button> collapsed
+
+Aria-controls attribute is used to specify the element being controlled. 
+F/e: a button might expand or collapse a list acting as a menu. 
+The value of aria-controls will be the id of the controlled element.
+
+If it is not possible to place the expanded content immediately after the controlling element, the aria-owns attribute allows you to virtually move it after the control in the accessibility tree.
+This allows assistive technology like screen readers to pretend the expanded content is placed directly after the control in the DOM.
+When you use either aria-controls or aria-owns, the value of aria-expanded must be continue to be updated as the control is expanded and collapsed.
+By using aria-expanded correctly, you can create an intuitive user experience for everyone.
