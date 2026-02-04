@@ -41,3 +41,15 @@ tricker, marquee, countdown timer
 aria-live="assertive" means that the update is very important, highest priority, user notified immediately.
 aria-live="polite" means that the update is not urgent, so the screen reader can wait until any current announcement is finished or until the user stops typing before announcing the update.
 aria-live="off" means that the update will not be announced unless the content is in an element that currently has keyboard focus.
+
+Aria States used on Custom Control Elements
+disabled attribute to disable a button or the 
+checked attribute to indicate that a checkbox is checked
+but if you are creating a custom control element, 
+you need to use ARIA attributes to convey the state 
+of the control to assistive technologies
+
+aria-selected="true" used to indicate that an element is aria-selected
+tabbed interface, a listbox, or a grid
+aria-disabled="true" used to indicate that an element is disabled 
+only to people using assistive technologies.
