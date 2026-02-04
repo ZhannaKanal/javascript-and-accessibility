@@ -33,3 +33,11 @@ If it is not possible to place the expanded content immediately after the contro
 This allows assistive technology like screen readers to pretend the expanded content is placed directly after the control in the DOM.
 When you use either aria-controls or aria-owns, the value of aria-expanded must be continue to be updated as the control is expanded and collapsed.
 By using aria-expanded correctly, you can create an intuitive user experience for everyone.
+
+aria-live Attribute, how does it work
+The aria-live attribute creates a live region on your page which can be used to notify screen reader users of dynamic content changes in the live region as they occur.
+error message or confirmation
+tricker, marquee, countdown timer
+aria-live="assertive" means that the update is very important, highest priority, user notified immediately.
+aria-live="polite" means that the update is not urgent, so the screen reader can wait until any current announcement is finished or until the user stops typing before announcing the update.
+aria-live="off" means that the update will not be announced unless the content is in an element that currently has keyboard focus.
