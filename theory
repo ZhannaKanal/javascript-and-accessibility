@@ -53,3 +53,5 @@ aria-selected="true" used to indicate that an element is aria-selected
 tabbed interface, a listbox, or a grid
 aria-disabled="true" used to indicate that an element is disabled 
 only to people using assistive technologies.
+aria-haspopup="" attribute when the popup has one of the following roles: menu, listbox, tree, grid, or dialog.
+The value of aria-haspopup must be either one of these roles or true, which defaults to the menu role.
