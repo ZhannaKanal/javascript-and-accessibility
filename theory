@@ -55,3 +55,6 @@ aria-disabled="true" used to indicate that an element is disabled
 only to people using assistive technologies.
 aria-haspopup="" attribute when the popup has one of the following roles: menu, listbox, tree, grid, or dialog.
 The value of aria-haspopup must be either one of these roles or true, which defaults to the menu role.
+aria-required="true" used to indicate that a field needs to be filled out before the form is submitted.
+if your label already has the word required, so you can omit the aria-required
+contenteditable attribute to users can type in their input.
