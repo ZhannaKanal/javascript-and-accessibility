@@ -66,4 +66,5 @@ Native elements typically have better support and built-in accessibility feature
 However, if you must create custom controls, using ARIA attributes is essential to convey the state of these controls to assistive technologies effectively.
 
 aria-controls Attribute 
-used to create a programmatic relationship between an element that controls the presence of another element on the page, and the element it controls. This relationship can help screen reader usesr better understand how the control works. Commom uses include a set of tabs, that control the visibility of different sections of content, or a button that toggles the visibility of a menu.
+used to create a programmatic relationship between an element that controls the presence of another element on the page, and the element it controls. This relationship can help screen reader usesr better understand how the control works. Commom uses include a set of tabs, that control the visibility of different sections of content, or a button that toggles the visibility of a menu.f/e: it hides or shows sections based on which tab is selected.
+aria-labelledby attribute points to the corresponding tab to give the panel an accessible name.f/e: to identify the content section that a tab controls.
