@@ -6,5 +6,7 @@ tabs.forEach((tab) => {
       panels.forEach((p) => (p.hidden = true));
       tab.setAttribute("aria-selected", "true");
       const associatedPanel = tab.getAttribute("aria-controls");
+      const panel = document.getElementById(associatedPanel);
+
   });
 });
