@@ -1,8 +1,8 @@
 const tabs = document.querySelectorAll('[role="tab"]');
 const panels = document.querySelectorAll('[role="tabpanel"]');
-tabs.forEach(tab => {
+tabs.forEach((tab) => {
   tab.addEventListener("click", () => {
-    tabs.forEach(t => t.setAttribute("aria-selected", "false"));
-
+    tabs.forEach((t) => t.setAttribute("aria-selected", "false"));
+    panels.forEach((p) => (p.hidden = true));
   });
 });
