@@ -5,9 +5,13 @@ let currentContent = "";
 
 noteEl.addEventListener("blur", () => {
   const newContent = noteEl.innerHTML;
-  statusEl.textContent = "Note saved successfully!";
+  if (currentContent == newContent) {
+    return;
+  }
   currentContent = newContent;
   console.log(currentContent);
+
+  statusEl.textContent = "Note saved successfully!";
 });
 
 window.addEventListener("DOMContentLoaded", () => {
