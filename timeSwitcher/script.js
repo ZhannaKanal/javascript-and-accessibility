@@ -1,7 +1,7 @@
 const themeSwitcherButton = document.getElementById("theme-switcher-button");
 const dropdown = document.getElementById("theme-dropdown");
 const themeItems = document.querySelectorAll("li");
-const liveRegion = document.querySelector('[aria-live="polite"]');
+const liveRegion = document.querySelector("#status");
 
 themeSwitcherButton.textContent = "Switch Theme";
 const themes = [
@@ -24,6 +24,7 @@ themeItems.forEach((item) => {
 
     const selectedTheme = themes.find((theme) => theme.name === themeName);
     liveRegion.textContent = selectedTheme.message;
+    liveRegion.style.color = "red";
 
     dropdown.hidden = true;
     themeSwitcherButton.setAttribute("aria-expanded", "false");
