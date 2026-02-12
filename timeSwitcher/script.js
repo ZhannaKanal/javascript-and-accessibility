@@ -4,9 +4,9 @@ const themes = [
   { name: "light", message: "Light msg" },
   { name: "dark", message: "Dark msg" },
   { name: "ocean", message: "Ocean msg" },
-  { name: "nord", message: "Nord msg" }
+  { name: "nord", message: "Nord msg" },
 ];
-themeSwitcherButton.addEventListener("click", ()=>{
-  dropdown.hidden = false;
-  themeSwitcherButton.setAttribute("aria-expanded", "true")
-})
+themeSwitcherButton.addEventListener("click", () => {
+  dropdown.hidden = !dropdown.hidden;
+  themeSwitcherButton.setAttribute("aria-expanded", "true");
+});
