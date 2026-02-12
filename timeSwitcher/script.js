@@ -6,3 +6,6 @@ const themes = [
   { name: "ocean", message: "Ocean msg" },
   { name: "nord", message: "Nord msg" }
 ];
+themeSwitcherButton.addEventListener("click", ()=>{
+  
+})
