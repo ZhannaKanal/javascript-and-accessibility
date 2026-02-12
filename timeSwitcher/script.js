@@ -7,5 +7,5 @@ const themes = [
   { name: "nord", message: "Nord msg" }
 ];
 themeSwitcherButton.addEventListener("click", ()=>{
-  
+  dropdown.hidden = false;
 })
