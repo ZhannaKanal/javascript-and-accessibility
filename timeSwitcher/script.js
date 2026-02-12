@@ -8,4 +8,5 @@ const themes = [
 ];
 themeSwitcherButton.addEventListener("click", ()=>{
   dropdown.hidden = false;
+  themeSwitcherButton.setAttribute("aria-expanded", "true")
 })
