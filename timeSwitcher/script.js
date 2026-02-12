@@ -1,4 +1,8 @@
 const themeSwitcherButton = document.getElementById("theme-switcher-button");
+const dropdown = document.getElementById("theme-dropdown");
+const themeItems = document.querySelectorAll("li");
+const liveRegion = document.querySelector('[aria-live="polite"]');
+
 themeSwitcherButton.textContent = "Switch Theme";
 const themes = [
   { name: "light", message: "Light msg" },
@@ -6,8 +10,7 @@ const themes = [
   { name: "ocean", message: "Ocean msg" },
   { name: "nord", message: "Nord msg" },
 ];
-const themeItems = document.querySelectorAll("li");
-const liveRegion = document.querySelector('[aria-live="polite"]');
+
 themeSwitcherButton.addEventListener("click", () => {
   dropdown.hidden = !dropdown.hidden;
   themeSwitcherButton.setAttribute("aria-expanded", !dropdown.hidden);
