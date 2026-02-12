@@ -11,4 +11,7 @@ themeSwitcherButton.addEventListener("click", () => {
   themeSwitcherButton.setAttribute("aria-expanded", !dropdown.hidden);
 });
 
-themeItems.forEach((item) => {});
+themeItems.forEach(item => {
+  item.addEventListener("click", () => {
+})
+})
