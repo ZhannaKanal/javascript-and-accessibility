@@ -16,5 +16,8 @@ themeItems.forEach((item) => {
     const themeName = item.id.replace("theme-", "");
     document.body.className = "";
     document.body.classList.add(`theme-${themeName}`);
+
+    dropdown.hidden = true;
+    themeSwitcherButton.setAttribute("aria-expanded", "false");
   });
 });
