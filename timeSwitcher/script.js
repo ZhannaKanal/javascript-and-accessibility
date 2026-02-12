@@ -1,6 +1,8 @@
 const themeSwitcherButton = document.getElementById("theme-switcher-button");
 themeSwitcherButton.textContent = "Switch Theme";
 const themes = [
-  { name: "Light", message: "Light msg" },
-  { name: "Dark", message: "Dark msg" },
+  { name: "light", message: "Light msg" },
+  { name: "dark", message: "Dark msg" },
+  { name: "ocean", message: "Ocean msg" },
+  { name: "nord", message: "Nord msg" }
 ];
