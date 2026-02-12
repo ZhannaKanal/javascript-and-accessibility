@@ -4,6 +4,14 @@ body {
   transition: background 0.3s, color 0.3s;
 }
 
+button{
+  color: rgb(51, 47, 47);
+  border: 1px solid grey;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: rgb(253, 246, 246);
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -11,6 +19,8 @@ ul {
 
 li {
   list-style-type: none;
+  padding:4px 32px;
+  color: grey;
 }
 
 #status {
